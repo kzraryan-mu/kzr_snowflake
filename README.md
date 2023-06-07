@@ -1,6 +1,7 @@
 # kzr_snowflake
 Make it easier to work with snowflake
 
+
 pypi url - https://pypi.org/project/kzr-snowflake/
 
 ## Table of Contents
