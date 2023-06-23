@@ -66,6 +66,23 @@ ks.database = "YOUR_DATABASE"
 ks.schema = "YOUR_SCHEMA"
 ks.connect()
 ```
+
+To connect with Shibboleth, use the following code while connecting. But first, make sure your credentials.json file has a Shibboleth user name. No password is needed for this way.
+```python
+ks.connect(True)
+```
+
+example of credentials.json file
+
+```json
+{"user": "<YOUR_USER_NAME>", "password": "<YOUR_PASSWORD>", "account": "<ACCOUNT_NAME>"}
+```
+
+example of an account name
+```
+xx12345.us-east-2.aws
+```
+
 2. Execute a SQL statement:
 ```python
 sql_statement = "SELECT * FROM YOUR_TABLE"  # replace with your SQL statement
